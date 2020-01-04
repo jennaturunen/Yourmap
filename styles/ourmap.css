@@ -1,0 +1,334 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+    background-color: #ffffff;
+
+    margin: 0;
+    padding: 0;
+}
+
+.headertext {
+    text-align: center;
+    letter-spacing: 0.5em;
+
+    padding-top: 1em;
+}
+
+.headertext h3:hover {
+    color: #cc6633;
+    transition: all 0.2s ease;
+}
+
+h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    color: #000000;
+
+    margin-bottom: 0;
+}
+
+h3 a {
+    display: block;
+
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #cc6633;
+}
+
+.kursbold {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+hr {
+    margin: 1em;
+}
+
+
+/* --------------- NAVIGAATIO --------------- */
+
+nav {
+    letter-spacing: 0.2em;
+
+    display: flex;
+    flex-flow: row;
+
+    justify-content: center;
+    overflow: hidden;
+
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: #f1f1f1;
+}
+
+nav ul {
+    float: right;
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 3em;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #cc6633;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+
+/* --------------- ALKU --------------- */
+
+#osa1 h3 {
+    color: #000000;
+}
+
+#osa1 {
+    display: flex;
+    flex-flow: row wrap;
+
+    padding-top: 3em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+
+    justify-content: space-evenly;
+}
+
+#osa1 div {
+    font-size: 1em;
+    width: 40%;
+
+    margin: 2em 0 0 0;
+}
+
+#osa1 div p {
+    margin-bottom: 2em;
+}
+
+#osa1 img {
+    height: 23em;
+}
+
+#osa2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9em;
+
+    display: flex;
+    flex-flow: row-reverse;
+
+    margin: 0 15em 0 15em;
+}
+
+#osa2 figure {
+    display: flex;
+    flex-flow: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#osa2 figcaption {
+    text-align: center;
+
+    border-style: solid;
+    border-radius: 1em;
+    border-color: #ffffff;
+    background-color: #f1f1f1;
+
+    padding: 1em;
+}
+
+#osa2 img {
+    height: 5em;
+    display: block;
+    padding: 1em;
+}
+
+
+/* ---------- KARTTA --------------- */
+
+#alue\.kartta {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+#kartta {
+    width: 100%;
+    height: 500px;
+    background-color: grey;
+}
+
+#alue\.kartta h3 {
+    text-align: center;
+    color: #cc6633;
+}
+
+#floating-panel {
+    font-family: 'Roboto', sans-serif;
+
+    background-color: #fff;
+
+    padding: 0;
+    margin: 0.5em;
+}
+
+#mode {
+    width: 100%;
+}
+
+/* ---------- KARTTA - HAKU ---------- */
+
+#alue\.kartta\.haku {
+    display: flex;
+    flex-flow: column;
+
+    align-content: center;
+    text-align: -webkit-center;
+}
+
+#hakupaneelit {
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+}
+
+#hakupaneelit p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+
+    margin: 0;
+    padding: 0 1em 0 2em;
+}
+
+input {
+    padding: 0.2em;
+    margin: 0.5em;
+}
+
+select {
+    font-family: 'Roboto', sans-serif;
+    /*text-align-last: center;*/
+}
+
+
+#output {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+
+    background-color: #cc6633;
+    color: white;
+    border: white;
+
+    margin: 0 1em 0 1em;
+    padding: 0.7em 1em 0.7em 1em;
+}
+
+
+/* ---------- INFO --------------- */
+
+#alue\.info {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+
+    padding: 3em 0 1em 0;
+    margin: 0 5em 1em 5em;
+    max-width: 80%;
+
+}
+
+#alue\.info h3 {
+    color: #cc6633;
+    margin: 0;
+    padding: 0;
+}
+
+#alue\.info p {
+    font-style: italic;
+    text-align: left;
+    align-self: center;
+    max-width: 80%;
+}
+
+#alue\.media {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    padding-top: 3em;
+}
+
+#videocontainer {
+    display: flex;
+    justify-content: center;
+
+
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+#videocontainer img {
+    align-self: center;
+    height: 20em;
+    display: block;
+}
+
+h4 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1em;
+    color: #cc6633;
+
+    letter-spacing: 0.3em;
+    text-align: center;
+
+    margin-bottom: 0;
+}
+
+h4 #nimet {
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    letter-spacing: 0;
+}
+
+#hlökuvat {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.hlökuva {
+    height: 11em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+footer {
+    font-size: 0.5em;
+    text-align: center;
+
+    margin: 5em 0 0 0;
+}

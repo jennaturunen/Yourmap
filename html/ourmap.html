@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YOURMAP</title>
+    <link href="../styles/ourmap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+</head>
+<body>
+
+<!-- OTSIKKO, NAVIGAATIO -->
+
+<header>
+    <div class="headertext">
+        <h3><span style="color: #cc6633">Y</span>OUR<br><a href="#alue.kartta"> MAP</a></h3>
+    </div>
+</header>
+<main>
+    <nav>
+        <ul>
+            <li><a href="#alue.alku">ETUSIVU</a></li>
+            <li><a href="#alue.kartta">KARTTA</a></li>
+            <li><a href="#alue.info">INFO</a></li>
+        </ul>
+    </nav>
+
+    <!-- ALKU, tervetuloa -->
+
+    <article id="alue.alku">
+        <div id="osa1">
+            <h3>MOI!</h3>
+            <hr>
+            <div>
+                <p class="kursbold">
+                    Oletko kyllästynyt miettimään missä tapaisit kaverisi?
+                    <br>
+                    Kiinnostaako muuten vain, mikä olisi maantieteellinen puolimatkanne?
+                </p>
+                <p>
+                    Rakkaudesta karttoihin ja intohimosta sijaintitietoihin, olemme kehittäneet sovelluksen, jolla voit
+                    selvittää kahden kohteen välisen pisteen. Siis vaikka itsesi ja ystäväsi välimatkan keskipisteen ja
+                    miksette samantien tapaisi
+                    juurikin siellä, kompromissi on ystävyyden sydän. Eikä siinä vielä kaikki, näet kartasta myös
+                    hoteimmat spotit kohdata tuttusi!
+                </p>
+            </div>
+            <img id="puh" src="../pics/puh.png" alt="puh">
+        </div>
+
+        <div id="osa2">
+            <figure><img src="../pics/smol/icocof.png" alt="icon">
+                <figcaption>Kerromme myös puolitietänne lähimmät ravintolat!</figcaption>
+            </figure>
+            <figure><img src="../pics/smol/icoleaf.png" alt="icon">
+                <figcaption>Luonnossa mieli rauhoittuu, mutta kukkaro ei kevene!</figcaption>
+            </figure>
+            <figure><img src="../pics/smol/icoface.png" alt="icon">
+                <figcaption>Enää ei aikaa kulu kohtaamispaikan pohtimiseen!</figcaption>
+            </figure>
+        </div>
+    </article>
+
+    <!-- KARTTA -->
+
+    <article id="alue.kartta">
+        <br>
+        <h3> MAP</h3>
+        <div id="kartta"></div>
+        <br>
+        <div id="alue.kartta.haku">
+            <div id="hakupaneelit">
+
+                <p>Ensimmäinen sijainti:</p>
+                <input id="paikka1" type="text" placeholder="Syötä osoite...">
+                <p>Toinen sijainti:</p>
+                <input id="paikka2" type="text" placeholder="Syötä osoite...">
+                <p>Kulkutapa: </p>
+                <div id="floating-panel">
+                    <label for="mode">
+                        <select id="mode">
+                            <option value="WALKING">Kävely</option>
+                            <option value="TRANSIT">Julkinen liikenne</option>
+                            <option value="DRIVING">Auto</option>
+                        </select>
+                    </label>
+                </div>
+                <button id="hakunappi" class="button" type="button">Laske keskipiste</button>
+            </div>
+            <br>
+            <div id="output" class="result-table"></div>
+        </div>
+    </article>
+
+    <!-- VIDEO, INFO -->
+
+    <article>
+        <div id="alue.info">
+            <h3>INFO</h3>
+            <hr>
+            <p>Yourmap on tehty ryhmätyönä kouluprojektia varten.<br>
+                Toivottavasti käyttäjänä saat siitä iloa ja apua
+                kavereidesi tapaamiseen.</p>
+        </div>
+
+        <div id="alue.media">
+            <div id="videocontainer">
+                <video src="../pics/yourmap_video.mp4" width="640" height="360" controls></video>
+            </div>
+            <div id="hlökuvat">
+                <h4>TEKIJÄT:<br><span id="nimet">KARHUKOPLA <br> Fanny <br> Jenna <br> Katariina</span></h4>
+                <hr>
+                <img class="hlökuva" src="../pics/f.png" alt="hlökuva">
+                <img class="hlökuva" src="../pics/j.png" alt="hlökuva">
+                <img class="hlökuva" src="../pics/k.png" alt="hlökuva">
+                <hr>
+            </div>
+        </div>
+    </article>
+    <footer>TEAM KARHUKOPLA 2018</footer>
+
+</main>
+
+<!-- SCRIPTIT -->
+
+<script src="../script/htmlscript.js"></script>
+<script src="../script/map.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUROWNKEy&callback=initMap&libraries=places,geometry">
+</script>
+</body>
+</html>

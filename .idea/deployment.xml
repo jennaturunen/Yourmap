@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="shell (project level)">
+    <serverData>
+      <paths name="shell">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/WebtekniikatDigitaalinenmedia/WebHarjoitukset/KARTTA" local="$PROJECT_DIR$" web="/WebtekniikatDigitaalinenmedia/WebHarjoitukset/KARTTA" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="shell (project level)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/WebtekniikatDigitaalinenmedia/WebHarjoitukset/KARTTA" local="$PROJECT_DIR$" web="/WebtekniikatDigitaalinenmedia/WebHarjoitukset/KARTTA" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
