@@ -11,7 +11,11 @@ Käytetyt tekniikat:
 Oma työnjälkeni näkyy kartan toiminnoissa.
 
 
-<img src="images/>
+<img src="images/hello.jpeg">
+
+<img src="images/map.jpeg">
+
+<img src="images/route.jpeg">
 
 Web-app that has been made as a group-project. User can insert two addresses and the app will show their midpoint. Also you can see restaurants/cafes that are near midpoint. App is perfect for friends who want to know and meet at their midpoint. That way the (geographical) distance is same for both. 
 
