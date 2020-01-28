@@ -239,7 +239,7 @@ function initMap() {
 
                     let infoC;
                     infoC = new google.maps.InfoWindow();
-                    let image1 = 'https://users.metropolia.fi/~katarkai/WebtekniikatDigitaalinenmedia/WebHarjoitukset/KARTTA2/pics/smol/MarkerC.png';
+                    let image1 = 'https://url_goes_here/pics/smol/MarkerC.png';
 
                     // lisätään C:lle marker
                     const marker3 = new google.maps.Marker({
@@ -274,7 +274,7 @@ function initMap() {
 
                     let info;
                     info = new google.maps.InfoWindow();
-                    let image2 = 'https://users.metropolia.fi/~katarkai/WebtekniikatDigitaalinenmedia/WebHarjoitukset/KARTTA2/pics/smol/icorest2.png';
+                    let image2 = 'https://url_goes_here/pics/smol/icorest2.png';
 
                     let service = new google.maps.places.PlacesService(kartta);
 
