@@ -8,7 +8,7 @@ Käytetyt tekniikat:
 - JavaScript
 - Google Maps API(s)
 
-Oma työnjälkeni näkyy kartan toiminnoissa.
+Osallistuin kartan toimintojen tekoon.
 
 <h3>Hello</h3>
 <img src="images/hello.jpeg">
@@ -27,4 +27,4 @@ Used techniques:
 - JavaScript
 - Google Maps API(s)
 
-I have made a large proportion of the map functions.
+I participated in the map functions.
